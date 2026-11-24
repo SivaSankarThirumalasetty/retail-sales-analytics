@@ -89,7 +89,7 @@ with tab1:
     fig.update_layout(title="Monthly realised revenue & margin", height=380,
                       yaxis=dict(title="₹"), yaxis2=dict(title="%", overlaying="y", side="right", showgrid=False),
                       legend=dict(orientation="h", y=1.1))
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width="stretch")
 
     c1, c2 = st.columns(2)
     cat = d.groupby("category").agg(revenue=("realised_revenue", "sum"), profit=("realised_profit", "sum"),
@@ -99,11 +99,11 @@ with tab1:
                                text="category", color_discrete_sequence=COLORS,
                                title="Category: revenue vs margin (bubble = revenue)")
                     .update_traces(textposition="top center").update_layout(showlegend=False, height=400),
-                    use_container_width=True)
+                    width="stretch")
     city = (d[d.city != "Unknown"].groupby(["region", "city"]).realised_revenue.sum().reset_index())
     c2.plotly_chart(px.treemap(city, path=["region", "city"], values="realised_revenue",
                                color_discrete_sequence=COLORS, title="Revenue by region → city")
-                    .update_layout(height=400), use_container_width=True)
+                    .update_layout(height=400), width="stretch")
 
     c3, c4 = st.columns(2)
     heat = d.groupby(["order_dow", "order_hour"]).order_id.nunique().reset_index()
@@ -111,14 +111,14 @@ with tab1:
     heat = heat.pivot(index="order_dow", columns="order_hour", values="order_id").reindex(days)
     c3.plotly_chart(px.imshow(heat, color_continuous_scale="Blues", aspect="auto",
                               title="Orders by weekday × hour").update_layout(height=360),
-                    use_container_width=True)
+                    width="stretch")
     ch = d.groupby("acquisition_channel").agg(revenue=("realised_revenue", "sum"),
                                                customers=("customer_id", "nunique")).reset_index()
     ch["revenue_per_customer"] = ch.revenue / ch.customers
     c4.plotly_chart(px.bar(ch.sort_values("revenue_per_customer"), x="revenue_per_customer",
                            y="acquisition_channel", orientation="h", color_discrete_sequence=[COLORS[1]],
                            title="Revenue per customer by acquisition channel").update_layout(height=360),
-                    use_container_width=True)
+                    width="stretch")
 
 # ------------------------------------------------------------------ customers
 with tab2:
@@ -131,15 +131,15 @@ with tab2:
     c1.plotly_chart(px.bar(long, x="value", y="rfm_segment", color="variable", barmode="group", orientation="h",
                            color_discrete_sequence=[COLORS[6], COLORS[0]],
                            title="RFM segments — share of customers vs revenue").update_layout(height=400),
-                    use_container_width=True)
+                    width="stretch")
     c2.plotly_chart(px.scatter(r.sample(min(3000, len(r)), random_state=1), x="recency", y="monetary",
                                color="cluster_name", size="frequency", log_y=True, opacity=0.6,
                                color_discrete_sequence=COLORS, title="K-Means clusters on RFM (sample)")
-                    .update_layout(height=400, legend=dict(orientation="h", y=-0.25)), use_container_width=True)
+                    .update_layout(height=400, legend=dict(orientation="h", y=-0.25)), width="stretch")
     st.plotly_chart(px.imshow(cohort.drop(columns=["0"], errors="ignore"), color_continuous_scale="Blues",
                               aspect="auto", labels=dict(x="Months since first order", y="Cohort", color="% active"),
                               title="Cohort retention (customers who signed up from Jan 2023)")
-                    .update_layout(height=560), use_container_width=True)
+                    .update_layout(height=560), width="stretch")
     st.info(f"Average retention: M1 {metrics['retention']['m1_avg_pct']}% · M3 {metrics['retention']['m3_avg_pct']}% · "
             f"M6 {metrics['retention']['m6_avg_pct']}% · M12 {metrics['retention']['m12_avg_pct']}%.  "
             f"Top 20% of customers generate {metrics['pareto_top20_customer_revenue_share_pct']}% of revenue.")
@@ -152,7 +152,7 @@ with tab3:
                            color=pay.sort_values("is_returned").payment_method.eq("COD"),
                            color_discrete_map={True: COLORS[3], False: COLORS[6]},
                            labels={"is_returned": "Return rate %"}, title="Return rate by payment method")
-                    .update_layout(showlegend=False, height=360), use_container_width=True)
+                    .update_layout(showlegend=False, height=360), width="stretch")
     disc = d.groupby("discount_band", observed=True).agg(profit_per_line=("realised_profit", "mean"),
                                                          return_rate=("is_returned", "mean")).reset_index()
     fig = go.Figure()
@@ -161,7 +161,7 @@ with tab3:
                     line=dict(color=COLORS[3], width=3))
     fig.update_layout(title="Discount economics", height=360,
                       yaxis2=dict(overlaying="y", side="right", showgrid=False), legend=dict(orientation="h", y=1.12))
-    c2.plotly_chart(fig, use_container_width=True)
+    c2.plotly_chart(fig, width="stretch")
     rm = metrics["return_model"]
     odds = pd.Series({**rm["top_odds_ratios"], **rm["lowest_odds_ratios"]}).sort_values()
     odds.index = [i.replace("cat__", "").replace("num__", "").replace("_", " ") for i in odds.index]
@@ -170,7 +170,7 @@ with tab3:
                            labels={"x": "Odds ratio (log scale)", "y": ""},
                            title=f"Return-risk drivers — logistic regression (ROC-AUC {rm['roc_auc']:.2f}, "
                                  f"baselines: COD, Beauty, 0% discount, Tier 1)")
-                    .update_layout(showlegend=False, height=420), use_container_width=True)
+                    .update_layout(showlegend=False, height=420), width="stretch")
 
 # ------------------------------------------------------------------ forecast
 with tab4:
@@ -182,20 +182,20 @@ with tab4:
     fig.add_scatter(x=fc.month, y=fc.forecast, name="Next 6 months", line=dict(color=COLORS[1], dash="dot", width=3))
     fig.update_layout(title=f"Revenue forecast — {fm['model']}", height=420, yaxis_title="₹",
                       legend=dict(orientation="h", y=1.12))
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width="stretch")
     comp = pd.Series(fm["model_comparison_mape_pct"]).sort_values().rename("Hold-out MAPE %").to_frame()
     c1, c2 = st.columns(2)
     c1.subheader("Model comparison (Jan–Jun 2025 hold-out)")
-    c1.dataframe(comp, use_container_width=True)
+    c1.dataframe(comp, width="stretch")
     c2.subheader("Forecast Jul–Dec 2025")
-    c2.dataframe(pd.Series(fm["next_6m"]).map(inr).rename("Forecast revenue").to_frame(), use_container_width=True)
+    c2.dataframe(pd.Series(fm["next_6m"]).map(inr).rename("Forecast revenue").to_frame(), width="stretch")
     c2.metric("Next 6 months total", inr(fm["next_6m_total"]))
     st.caption("Forecast models use the full company data and ignore the sidebar filters.")
 
 # ------------------------------------------------------------------ data quality
 with tab5:
     st.subheader("Cleaning log")
-    st.dataframe(pd.Series(dq).rename("value").to_frame(), use_container_width=True)
+    st.dataframe(pd.Series(dq).rename("value").to_frame(), width="stretch")
     st.markdown("""
 **Pipeline:** `generate_data.py` → `clean.py` (type repair, de-duplication, mixed-format date parsing,
 currency-string parsing, city/payment standardisation, outlier & invalid-quantity removal, referential checks,

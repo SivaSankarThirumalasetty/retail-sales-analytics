@@ -3,13 +3,13 @@
 ## 1. GitHub repository URL
 
 ```
-https://github.com/<your-username>/retail-sales-analytics
+https://github.com/SivaSankarThirumalasetty/retail-sales-analytics
 ```
 
 ## 2. Live demo / deployment URL
 
 ```
-https://<your-app-name>.streamlit.app
+https://siva-retail-sales-analytics.streamlit.app
 ```
 
 ## 3. Technical contribution report (PDF)
@@ -19,7 +19,7 @@ Upload: `reports/Technical_Contribution_Report.pdf` (about 630 KB, 6 pages)
 To put your name and links on the cover, run this and then upload the new file:
 
 ```
-python reports/build_report.py --author "Your Name" --repo "https://github.com/<you>/retail-sales-analytics" --demo "https://<app>.streamlit.app"
+python reports/build_report.py --author "Your Name" --repo "https://github.com/SivaSankarThirumalasetty/retail-sales-analytics" --demo "https://siva-retail-sales-analytics.streamlit.app"
 ```
 
 ## 4. Project architecture & technical description

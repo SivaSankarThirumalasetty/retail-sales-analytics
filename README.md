@@ -8,7 +8,14 @@ End-to-end data analyst project on **~60,000 order lines** from an Indian direct
 ![SQL](https://img.shields.io/badge/SQL-SQLite-003B57) ![scikit-learn](https://img.shields.io/badge/scikit--learn-1.5-F7931E)
 ![Streamlit](https://img.shields.io/badge/Streamlit-dashboard-FF4B4B)
 
-**Live dashboard:** _add your Streamlit URL here after deploying_ · **Report:** [`reports/Technical_Contribution_Report.pdf`](reports/Technical_Contribution_Report.pdf)
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://siva-retail-sales-analytics.streamlit.app)
+
+| | |
+|---|---|
+| **Live dashboard** | https://siva-retail-sales-analytics.streamlit.app |
+| **Streamlit account** | [sivasankarthirumalasetty](https://share.streamlit.io/user/sivasankarthirumalasetty) |
+| **GitHub repository** | https://github.com/SivaSankarThirumalasetty/retail-sales-analytics |
+| **Report (PDF)** | [`reports/Technical_Contribution_Report.pdf`](reports/Technical_Contribution_Report.pdf) |
 
 ---
 
@@ -104,6 +111,24 @@ Returns & discounts · Forecast · Data quality & method. Filtered data can be d
 |---|---|
 | ![](reports/figures/01_monthly_revenue.png) | ![](reports/figures/04_rfm_kmeans.png) |
 | ![](reports/figures/05_return_drivers.png) | ![](reports/figures/07_forecast.png) |
+
+## Deployment
+
+The dashboard runs on **Streamlit Community Cloud** under the account
+[sivasankarthirumalasetty](https://share.streamlit.io/user/sivasankarthirumalasetty):
+
+| Setting | Value |
+|---|---|
+| App URL | https://siva-retail-sales-analytics.streamlit.app |
+| Repository / branch | `SivaSankarThirumalasetty/retail-sales-analytics` · `main` |
+| Main file | `app.py` |
+| Python | 3.11 (dependencies pinned in `requirements.txt`) |
+| Theme | `.streamlit/config.toml` |
+
+Every push to `main` redeploys the app automatically. To deploy your own copy: fork the repo, sign in at
+[share.streamlit.io](https://share.streamlit.io) with GitHub, click **Create app → Deploy a public app from
+GitHub**, enter the repo, branch `main` and file `app.py`, choose Python 3.11 under *Advanced settings*,
+then click **Deploy**.
 
 ## Run it
 
