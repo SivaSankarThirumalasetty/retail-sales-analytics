@@ -1,0 +1,16 @@
+{
+  "orders_raw_rows": 61068,
+  "duplicate_rows_removed": 902,
+  "dates_unparseable": 0,
+  "quantity_non_positive_removed": 360,
+  "quantity_outliers_removed": 25,
+  "payment_method_standardised": 3356,
+  "payment_method_missing_filled": 562,
+  "customers_raw_rows": 12000,
+  "city_spellings_standardised": 784,
+  "city_missing": 259,
+  "age_missing_imputed_median": 171,
+  "orphan_lines_removed": 0,
+  "fact_rows_final": 59781,
+  "rows_retained_pct": 97.89
+}

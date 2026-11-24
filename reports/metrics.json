@@ -1,0 +1,335 @@
+{
+  "kpi": {
+    "net_revenue": 93327483.5,
+    "realised_revenue": 82960707.6,
+    "realised_gross_profit": 23022786.02,
+    "gross_margin_pct": 27.75,
+    "orders": 35892,
+    "order_lines": 59781,
+    "customers": 10209,
+    "aov": 2311.4,
+    "return_rate_pct": 11.05,
+    "avg_rating": 3.91,
+    "repeat_customer_pct": 67.91,
+    "period": "Jan 2023 \u2013 Jun 2025",
+    "h1_yoy_growth_pct": 12.0
+  },
+  "revenue_by_year": {
+    "2023": 28204665.05,
+    "2024": 36209963.45,
+    "2025": 18546079.1
+  },
+  "category": [
+    {
+      "category": "Electronics Accessories",
+      "revenue": 30082657.0,
+      "profit": 5321828.86,
+      "return_rate": 0.092,
+      "lines": 11768,
+      "margin_pct": 17.691,
+      "revenue_share_pct": 36.261
+    },
+    {
+      "category": "Fashion",
+      "revenue": 14660532.95,
+      "profit": 6181553.96,
+      "return_rate": 0.21,
+      "lines": 14253,
+      "margin_pct": 42.165,
+      "revenue_share_pct": 17.672
+    },
+    {
+      "category": "Sports & Fitness",
+      "revenue": 14136640.15,
+      "profit": 3191139.56,
+      "return_rate": 0.104,
+      "lines": 6070,
+      "margin_pct": 22.574,
+      "revenue_share_pct": 17.04
+    },
+    {
+      "category": "Home & Kitchen",
+      "revenue": 12898687.85,
+      "profit": 3885066.14,
+      "return_rate": 0.086,
+      "lines": 10869,
+      "margin_pct": 30.12,
+      "revenue_share_pct": 15.548
+    },
+    {
+      "category": "Beauty & Personal Care",
+      "revenue": 7304013.1,
+      "profit": 3853334.41,
+      "return_rate": 0.064,
+      "lines": 9461,
+      "margin_pct": 52.756,
+      "revenue_share_pct": 8.804
+    },
+    {
+      "category": "Books & Stationery",
+      "revenue": 3878176.55,
+      "profit": 589863.09,
+      "return_rate": 0.048,
+      "lines": 7360,
+      "margin_pct": 15.21,
+      "revenue_share_pct": 4.675
+    }
+  ],
+  "city_tier": [
+    {
+      "city_tier": 1.0,
+      "revenue": 50143648.85,
+      "return_rate": 0.105,
+      "delivery": 2.155,
+      "aov": 2339.335
+    },
+    {
+      "city_tier": 2.0,
+      "revenue": 20767830.4,
+      "return_rate": 0.113,
+      "delivery": 3.514,
+      "aov": 2291.749
+    },
+    {
+      "city_tier": 3.0,
+      "revenue": 10049347.95,
+      "return_rate": 0.131,
+      "delivery": 5.508,
+      "aov": 2194.181
+    }
+  ],
+  "payment": [
+    {
+      "payment_method": "COD",
+      "lines": 13861,
+      "return_rate": 0.1665
+    },
+    {
+      "payment_method": "Credit/Debit Card",
+      "lines": 10447,
+      "return_rate": 0.0869
+    },
+    {
+      "payment_method": "Net Banking",
+      "lines": 3494,
+      "return_rate": 0.097
+    },
+    {
+      "payment_method": "UPI",
+      "lines": 26907,
+      "return_rate": 0.0958
+    },
+    {
+      "payment_method": "Unknown",
+      "lines": 562,
+      "return_rate": 0.1032
+    },
+    {
+      "payment_method": "Wallet",
+      "lines": 4510,
+      "return_rate": 0.0918
+    }
+  ],
+  "cohort_customers": 9252,
+  "retention": {
+    "m1_avg_pct": 29.59,
+    "m3_avg_pct": 22.91,
+    "m6_avg_pct": 14.9,
+    "m12_avg_pct": 6.64
+  },
+  "repeat_within_3m_by_channel_pct": {
+    "Referral": 69.59,
+    "Organic Search": 64.14,
+    "Google Ads": 54.57,
+    "Influencer": 53.68,
+    "Paid Social": 48.76,
+    "Marketplace": 42.87
+  },
+  "rfm_segments": [
+    {
+      "rfm_segment": "Champions",
+      "customers": 1917,
+      "revenue": 32008097.1,
+      "avg_recency": 89.52,
+      "avg_frequency": 7.17,
+      "customer_share_pct": 18.78,
+      "revenue_share_pct": 38.58
+    },
+    {
+      "rfm_segment": "At Risk",
+      "customers": 2214,
+      "revenue": 21049873.85,
+      "avg_recency": 626.05,
+      "avg_frequency": 4.12,
+      "customer_share_pct": 21.69,
+      "revenue_share_pct": 25.37
+    },
+    {
+      "rfm_segment": "Loyal",
+      "customers": 1994,
+      "revenue": 18436246.5,
+      "avg_recency": 235.1,
+      "avg_frequency": 4.09,
+      "customer_share_pct": 19.53,
+      "revenue_share_pct": 22.22
+    },
+    {
+      "rfm_segment": "Hibernating",
+      "customers": 1869,
+      "revenue": 5130304.45,
+      "avg_recency": 692.74,
+      "avg_frequency": 1.19,
+      "customer_share_pct": 18.31,
+      "revenue_share_pct": 6.18
+    },
+    {
+      "rfm_segment": "New / Promising",
+      "customers": 1473,
+      "revenue": 4250779.85,
+      "avg_recency": 88.07,
+      "avg_frequency": 1.21,
+      "customer_share_pct": 14.43,
+      "revenue_share_pct": 5.12
+    },
+    {
+      "rfm_segment": "Need Attention",
+      "customers": 742,
+      "revenue": 2085405.85,
+      "avg_recency": 326.61,
+      "avg_frequency": 1.2,
+      "customer_share_pct": 7.27,
+      "revenue_share_pct": 2.51
+    }
+  ],
+  "kmeans": {
+    "silhouette_by_k": {
+      "2": 0.336,
+      "3": 0.3527,
+      "4": 0.3883,
+      "5": 0.3512,
+      "6": 0.3317,
+      "7": 0.3292
+    },
+    "chosen_k": 4,
+    "profiles": [
+      {
+        "cluster_name": "High-Value \u00b7 Cooling",
+        "recency": 327.4,
+        "frequency": 6.9,
+        "monetary": 16589.9,
+        "customers": 3215
+      },
+      {
+        "cluster_name": "Low-Value \u00b7 Lapsed",
+        "recency": 502.9,
+        "frequency": 1.7,
+        "monetary": 3519.2,
+        "customers": 4933
+      },
+      {
+        "cluster_name": "Mid-Value \u00b7 Active",
+        "recency": 37.2,
+        "frequency": 2.8,
+        "monetary": 6625.6,
+        "customers": 1851
+      },
+      {
+        "cluster_name": "Zero-Value (orders returned)",
+        "recency": 433.8,
+        "frequency": 1.0,
+        "monetary": 0.0,
+        "customers": 210
+      }
+    ]
+  },
+  "pareto_top20_customer_revenue_share_pct": 57.26,
+  "return_model": {
+    "roc_auc": 0.6899,
+    "test_rows": 14599,
+    "top_odds_ratios": {
+      "cat__category_Fashion": 3.99,
+      "cat__category_Sports & Fitness": 1.721,
+      "cat__discount_band_21-30%": 1.586,
+      "cat__discount_band_>30%": 1.582,
+      "cat__category_Electronics Accessories": 1.489,
+      "cat__category_Home & Kitchen": 1.366,
+      "cat__city_tier_3": 1.074,
+      "cat__city_tier_2": 1.058
+    },
+    "lowest_odds_ratios": {
+      "cat__payment_method_Net Banking": 0.509,
+      "cat__payment_method_UPI": 0.491,
+      "cat__payment_method_Wallet": 0.457,
+      "cat__payment_method_Credit/Debit Card": 0.424
+    }
+  },
+  "discount_bands": [
+    {
+      "discount_band": "0%",
+      "lines": 12158,
+      "revenue": 19338986.0,
+      "profit": 7207803.05,
+      "return_rate": 0.106,
+      "margin_pct": 37.271,
+      "profit_per_line": 592.844
+    },
+    {
+      "discount_band": "1-10%",
+      "lines": 19521,
+      "revenue": 29353930.6,
+      "profit": 9261225.9,
+      "return_rate": 0.1,
+      "margin_pct": 31.55,
+      "profit_per_line": 474.424
+    },
+    {
+      "discount_band": "11-20%",
+      "lines": 18608,
+      "revenue": 24588372.1,
+      "profit": 6025530.03,
+      "return_rate": 0.106,
+      "margin_pct": 24.506,
+      "profit_per_line": 323.814
+    },
+    {
+      "discount_band": "21-30%",
+      "lines": 6365,
+      "revenue": 6778635.5,
+      "profit": 667016.75,
+      "return_rate": 0.147,
+      "margin_pct": 9.84,
+      "profit_per_line": 104.794
+    },
+    {
+      "discount_band": ">30%",
+      "lines": 3129,
+      "revenue": 2900783.4,
+      "profit": -138789.71,
+      "return_rate": 0.146,
+      "margin_pct": -4.785,
+      "profit_per_line": -44.356
+    }
+  ],
+  "forecast": {
+    "model": "Holt-Winters (damped trend, mult. season)",
+    "model_comparison_mape_pct": {
+      "Holt-Winters (add. trend, mult. season)": 6.14,
+      "Holt-Winters (damped trend, mult. season)": 5.85,
+      "Holt-Winters (add. trend, add. season)": 10.54,
+      "Seasonal naive (same month last year)": 10.66,
+      "Seasonal naive \u00d7 YoY growth": 14.7
+    },
+    "holdout_months": 6,
+    "mape_pct": 5.85,
+    "seasonal_naive_mape_pct": 10.66,
+    "next_6m_total": 21923628.58,
+    "next_6m": {
+      "2025-07": 2956889.93,
+      "2025-08": 3412286.31,
+      "2025-09": 3438899.9,
+      "2025-10": 4210558.08,
+      "2025-11": 3996920.54,
+      "2025-12": 3908073.83
+    }
+  }
+}

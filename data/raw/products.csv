@@ -1,0 +1,123 @@
+product_id,category,list_price,unit_cost
+ELE-001,Electronics Accessories,2819.0,1857.36
+ELE-002,Electronics Accessories,1209.0,879.82
+ELE-003,Electronics Accessories,3499.0,2594.22
+ELE-004,Electronics Accessories,2329.0,1717.89
+ELE-005,Electronics Accessories,509.0,352.93
+ELE-006,Electronics Accessories,4699.0,3297.42
+ELE-007,Electronics Accessories,2729.0,1908.56
+ELE-008,Electronics Accessories,2909.0,2031.82
+ELE-009,Electronics Accessories,549.0,336.49
+ELE-010,Electronics Accessories,1249.0,924.66
+ELE-011,Electronics Accessories,1019.0,759.78
+ELE-012,Electronics Accessories,4149.0,3156.1
+ELE-013,Electronics Accessories,2029.0,1398.39
+ELE-014,Electronics Accessories,3189.0,2116.07
+ELE-015,Electronics Accessories,1219.0,884.63
+ELE-016,Electronics Accessories,709.0,540.26
+ELE-017,Electronics Accessories,1619.0,1232.42
+ELE-018,Electronics Accessories,469.0,322.42
+ELE-019,Electronics Accessories,3229.0,2204.88
+ELE-020,Electronics Accessories,1969.0,1364.21
+ELE-021,Electronics Accessories,2709.0,2040.62
+ELE-022,Electronics Accessories,979.0,693.52
+FAS-001,Fashion,729.0,344.73
+FAS-002,Fashion,579.0,257.93
+FAS-003,Fashion,1439.0,721.46
+FAS-004,Fashion,409.0,193.08
+FAS-005,Fashion,469.0,210.45
+FAS-006,Fashion,299.0,148.14
+FAS-007,Fashion,1829.0,836.15
+FAS-008,Fashion,1379.0,707.56
+FAS-009,Fashion,1519.0,756.69
+FAS-010,Fashion,1809.0,902.85
+FAS-011,Fashion,859.0,463.68
+FAS-012,Fashion,1109.0,505.32
+FAS-013,Fashion,409.0,205.92
+FAS-014,Fashion,389.0,186.48
+FAS-015,Fashion,1399.0,637.89
+FAS-016,Fashion,889.0,406.87
+FAS-017,Fashion,1099.0,490.96
+FAS-018,Fashion,1739.0,843.28
+FAS-019,Fashion,1289.0,646.0
+FAS-020,Fashion,1069.0,517.38
+FAS-021,Fashion,1089.0,614.6
+FAS-022,Fashion,599.0,330.86
+FAS-023,Fashion,319.0,174.22
+FAS-024,Fashion,819.0,433.96
+FAS-025,Fashion,489.0,224.95
+FAS-026,Fashion,769.0,403.94
+FAS-027,Fashion,2139.0,1067.16
+FAS-028,Fashion,509.0,211.25
+FAS-029,Fashion,339.0,168.76
+FAS-030,Fashion,569.0,252.14
+HOM-001,Home & Kitchen,819.0,517.6
+HOM-002,Home & Kitchen,509.0,328.98
+HOM-003,Home & Kitchen,319.0,197.62
+HOM-004,Home & Kitchen,2699.0,1805.18
+HOM-005,Home & Kitchen,829.0,471.07
+HOM-006,Home & Kitchen,429.0,262.17
+HOM-007,Home & Kitchen,559.0,376.51
+HOM-008,Home & Kitchen,1149.0,747.75
+HOM-009,Home & Kitchen,399.0,233.15
+HOM-010,Home & Kitchen,2399.0,1338.87
+HOM-011,Home & Kitchen,1849.0,924.8
+HOM-012,Home & Kitchen,1669.0,758.24
+HOM-013,Home & Kitchen,779.0,451.26
+HOM-014,Home & Kitchen,1309.0,850.17
+HOM-015,Home & Kitchen,1169.0,826.02
+HOM-016,Home & Kitchen,1389.0,814.81
+HOM-017,Home & Kitchen,309.0,197.96
+HOM-018,Home & Kitchen,749.0,464.96
+HOM-019,Home & Kitchen,279.0,175.94
+HOM-020,Home & Kitchen,919.0,557.87
+HOM-021,Home & Kitchen,599.0,327.47
+HOM-022,Home & Kitchen,359.0,212.58
+HOM-023,Home & Kitchen,329.0,200.01
+HOM-024,Home & Kitchen,1179.0,768.45
+BEA-001,Beauty & Personal Care,189.0,75.16
+BEA-002,Beauty & Personal Care,699.0,309.48
+BEA-003,Beauty & Personal Care,289.0,139.09
+BEA-004,Beauty & Personal Care,679.0,328.57
+BEA-005,Beauty & Personal Care,799.0,328.69
+BEA-006,Beauty & Personal Care,879.0,299.78
+BEA-007,Beauty & Personal Care,189.0,77.87
+BEA-008,Beauty & Personal Care,1229.0,523.47
+BEA-009,Beauty & Personal Care,249.0,101.02
+BEA-010,Beauty & Personal Care,159.0,56.4
+BEA-011,Beauty & Personal Care,539.0,220.47
+BEA-012,Beauty & Personal Care,349.0,153.75
+BEA-013,Beauty & Personal Care,1009.0,367.97
+BEA-014,Beauty & Personal Care,959.0,382.22
+BEA-015,Beauty & Personal Care,309.0,106.05
+BEA-016,Beauty & Personal Care,1339.0,550.11
+BEA-017,Beauty & Personal Care,289.0,139.07
+BEA-018,Beauty & Personal Care,489.0,238.83
+BEA-019,Beauty & Personal Care,269.0,90.78
+BEA-020,Beauty & Personal Care,1289.0,430.29
+SPO-001,Sports & Fitness,729.0,548.58
+SPO-002,Sports & Fitness,779.0,508.25
+SPO-003,Sports & Fitness,2219.0,1535.91
+SPO-004,Sports & Fitness,4389.0,3120.32
+SPO-005,Sports & Fitness,809.0,561.37
+SPO-006,Sports & Fitness,1079.0,719.38
+SPO-007,Sports & Fitness,3449.0,2083.9
+SPO-008,Sports & Fitness,5589.0,4003.51
+SPO-009,Sports & Fitness,1729.0,1121.2
+SPO-010,Sports & Fitness,709.0,478.01
+SPO-011,Sports & Fitness,519.0,345.85
+SPO-012,Sports & Fitness,879.0,527.28
+SPO-013,Sports & Fitness,689.0,429.31
+SPO-014,Sports & Fitness,2689.0,1568.04
+BOO-001,Books & Stationery,189.0,146.13
+BOO-002,Books & Stationery,759.0,553.72
+BOO-003,Books & Stationery,99.0,67.74
+BOO-004,Books & Stationery,339.0,216.86
+BOO-005,Books & Stationery,399.0,293.85
+BOO-006,Books & Stationery,129.0,94.52
+BOO-007,Books & Stationery,129.0,104.15
+BOO-008,Books & Stationery,249.0,176.33
+BOO-009,Books & Stationery,829.0,624.34
+BOO-010,Books & Stationery,369.0,268.07
+BOO-011,Books & Stationery,779.0,579.45
+BOO-012,Books & Stationery,579.0,408.03
